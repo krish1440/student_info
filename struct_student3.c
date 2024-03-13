@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define MAX_STUDENTS 100
+#define MAX_STUDENTS 100  //BY default ITS FIX 
 
 struct Student {
     int id;
@@ -11,6 +11,7 @@ struct Student {
     float gpa;
 };
 
+/*FUNCTION DEFINATION*/
 void addStudent(struct Student students[], int *numStudents);
 void updateStudent(struct Student students[], int numStudents);
 void deleteStudent(struct Student students[], int *numStudents);
@@ -19,10 +20,10 @@ void saveDataToCSV(struct Student students[], int numStudents);
 void rewriteFile(struct Student students[], int numStudents, FILE *file);
 
 int main() {
-    struct Student students[MAX_STUDENTS];
+    struct Student students[MAX_STUDENTS];  
     int numStudents = 0;
     int choice;
-
+/*CHOICE TO CHOOSE THE SERVICE*/
     do {
         printf("\nMenu:\n");
         printf("1. Add Student\n");
@@ -61,6 +62,7 @@ int main() {
     return 0;
 }
 
+/*DECLARATION OF VARIOUS FUNCTION*/
 void addStudent(struct Student students[], int *numStudents) {
     if (*numStudents < MAX_STUDENTS) {
         struct Student newStudent;
