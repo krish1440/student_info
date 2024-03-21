@@ -1,4 +1,4 @@
-this program is basicaly store the data of student and store in csc file 
+this program is basicaly store the data of student and store in csv file 
 
 thare are such fiture like :
 1. Add Student
